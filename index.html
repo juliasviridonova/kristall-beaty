@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кристалл Бьюти — Пространство красоты и отдыха</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__container">
+      <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+        <span class="burger-btn__line"></span>
+        <span class="burger-btn__line"></span>
+        <span class="burger-btn__line"></span>
+      </button>
+
+      <a href="#" class="logo">
+        <span class="logo__title">Кристалл</span>
+        <span class="logo__subtitle">Бьюти</span>
+      </a>
+
+      <nav class="nav" id="navMenu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+          <li class="nav__item"><a href="#prices" class="nav__link">Цены</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+78001234567" class="header__phone-link" aria-label="Позвонить нам">
+          <svg class="header__phone-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.47a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/>
+          </svg>
+          <span class="header__phone-text">+7 (800) 123-45-67</span>
+        </a>
+        <a href="#contact-form" class="btn btn--header">Записаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главный экран -->
+    <section class="hero" id="about">
+      <div class="hero__bg-overlay"></div>
+      <div class="container hero__container">
+        <h1 class="hero__title">Кристалл Бьюти:<br>пространство красоты и отдыха</h1>
+        <p class="hero__subtitle">Парикмахерские услуги, спа, массаж, фитнес и уход — всё в одном месте</p>
+        <a href="#services" class="btn btn--primary hero__btn">Выбрать услугу</a>
+      </div>
+    </section>
+
+    <!-- Секция Услуг -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Услуги</h2>
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/парикмахерские услуги.jpg" alt="Парикмахерские услуги" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Парикмахерские+услуги'">
+            </div>
+            <h3 class="service-card__title">Парикмахерские услуги</h3>
+            <p class="service-card__desc">Окрашивание, стрижки, свадебные и вечерние прически, кератиновый уход.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/уход за волосами.jpg" alt="Уход за волосами" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Уход+за+волосами'">
+            </div>
+            <h3 class="service-card__title">Уход за волосами</h3>
+            <p class="service-card__desc">Глубокое восстановление структуры, ботокс, экранирование и спа-ритуалы.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/солярий.jpg" alt="Солярий" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Солярий'">
+            </div>
+            <h3 class="service-card__title">Солярий</h3>
+            <p class="service-card__desc">Вертикальный и горизонтальный турбосолярий с контролем ультрафиолета.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/тренажерный зал.jpg" alt="Тренажёрный зал" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Тренажёрный+зал'">
+            </div>
+            <h3 class="service-card__title">Тренажёрный зал</h3>
+            <p class="service-card__desc">Индивидуальные тренировки с инструктором и комфортная фитнес-зона.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/уход за лицом.jpg" alt="Уход за лицом" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Уход+за+лицом'">
+            </div>
+            <h3 class="service-card__title">Уход за лицом</h3>
+            <p class="service-card__desc">Атравматическая чистка, пилинги, аппаратная косметология и массаж лица.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/спа-программы.jpg" alt="Спа-программы" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Спа-программы'">
+            </div>
+            <h3 class="service-card__title">Спа-программы</h3>
+            <p class="service-card__desc">Комплексный релакс, обёртывания, ароматерапия и стоун-терапия.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/массаж.jpg" alt="Массаж" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Массаж'">
+            </div>
+            <h3 class="service-card__title">Массаж</h3>
+            <p class="service-card__desc">Классический, антицеллюлитный, лимфодренажный и расслабляющий массаж.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__image-wrap">
+              <img src="img/маникюр.jpg" alt="Маникюр" class="service-card__img" onerror="this.src='https://placehold.co/300x300/e6d7cc/4a3b32?text=Маникюр'">
+            </div>
+            <h3 class="service-card__title">Маникюр</h3>
+            <p class="service-card__desc">Аппаратный и комбинированный маникюр с долговременным покрытием и дизайном.</p>
+            <a href="#contact-form" class="btn btn--secondary">Подробнее</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция Прайс на услуги -->
+    <section class="price-section" id="prices">
+      <div class="container">
+        <h2 class="section-title">Прайс на услуги</h2>
+        <div class="table-responsive">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Название услуги</th>
+                <th scope="col">Длительность</th>
+                <th scope="col">Цена (руб.)</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Окрашивание от</td>
+                <td>2 часа</td>
+                <td>2500</td>
+              </tr>
+              <tr>
+                <td>Стрижка женская от</td>
+                <td>20 мин</td>
+                <td>800</td>
+              </tr>
+              <tr>
+                <td>Укладка волос</td>
+                <td>20 мин</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>Солярий</td>
+                <td>1 минута</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Тренажерный зал</td>
+                <td>8 посещений</td>
+                <td>3500</td>
+              </tr>
+              <tr>
+                <td>Спа-ритуал "Релакс"</td>
+                <td>1 час</td>
+                <td>1700</td>
+              </tr>
+              <tr>
+                <td>Массаж классический</td>
+                <td>30 мин</td>
+                <td>1300</td>
+              </tr>
+              <tr>
+                <td>Маникюр с покрытием</td>
+                <td>1 час 30 минут</td>
+                <td>2200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция Контакты и запись -->
+    <section class="contact-section" id="contacts">
+      <div class="container">
+        <h2 class="section-title section-title--left">Связаться с нами</h2>
+        <div class="contact-section__grid">
+          
+          <!-- Форма записи -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-input" placeholder="Имя" required>
+              <span class="form-error" id="nameError">Пожалуйста, укажите ваше имя</span>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+              <span class="form-error" id="phoneError">Введите номер в формате +7 (XXX) XXX-XX-XX</span>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-textarea" placeholder="Сообщение или желаемая услуга" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form-submit-btn">Отправить</button>
+          </form>
+
+          <!-- Контактная информация -->
+          <div class="contact-info">
+            <div class="contact-info__item">
+              <span class="contact-info__icon">📍</span>
+              <div>
+                <strong>Кристалл Бьюти</strong><br>
+                ул. Сескованная, 13
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <span class="contact-info__icon">📞</span>
+              <div>
+                <a href="tel:+78001234567" class="contact-link">+7 (800) 123-45-67</a>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <span class="contact-info__icon">🕒</span>
+              <div>
+                <strong>График работы</strong><br>
+                пн-пт 08:00 – 20:00<br>
+                сб-вс 09:00 – 19:00
+              </div>
+            </div>
+          </div>
+
+          <!-- Карта -->
+          <div class="contact-map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.36725890886!2d37.6172999!3d55.751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzA0LjUiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" 
+              class="contact-map__frame" 
+              allowfullscreen="" 
+              loading="lazy" 
+              title="Интерактивная карта">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__copy">&copy; 2026 «Кристалл Бьюти». Все права защищены.</p>
+      <a href="#" class="footer__policy">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <!-- Всплывающее Toast-уведомление -->
+  <div class="toast" id="toastNotification">Спасибо, мы свяжемся с вами!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
